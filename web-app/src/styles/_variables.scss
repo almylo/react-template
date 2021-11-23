@@ -1,0 +1,124 @@
+$layout-width: 1600px;
+$container-width-header: 1684px;
+$container-width-1: 1557px;
+$container-width-2: 1430px;
+$container-width-3: 1284px;
+$container-width-4: 900px;
+$headerHeight: 8rem;
+$headerStickyHeight: 6.5rem;
+$headerMobileHeight: 6rem;
+
+/**
+  Media
+  ===================================================================
+*/
+
+$width-xxs: 375;
+$width-xs: 569;
+$width-s: 768;
+$width-m: 1080;
+$width-l: 1280;
+$width-xl: 1600;
+$width-xxl: 1920;
+$xxs: 'only screen and (min-width: #{$width-xxs}px)';
+$xs: 'only screen and (min-width: #{$width-xs}px)';
+$s: 'only screen and (min-width: #{$width-s}px)';
+$m: 'only screen and (min-width: #{$width-m}px)';
+$l: 'only screen and (min-width: #{$width-l}px)';
+$xl: 'only screen and (min-width: #{$width-xl}px)';
+$xxl: 'only screen and (min-width: #{$width-xxl}px)';
+$max-xxs: 'only screen and (max-width: #{$width-xxs }px)';
+$max-xs: 'only screen and (max-width: #{$width-xs - 1}px)';
+$max-s: 'only screen and (max-width: #{$width-s}px)';
+$max-m: 'only screen and (max-width: #{$width-m}px)';
+$max-l: 'only screen and (max-width: #{$width-l - 1}px)';
+$max-xl: 'only screen and (max-width: #{$width-xl - 1}px)';
+$h-xs: 'only screen and (min-height: 640px)';
+$h-s: 'only screen and (min-height: 860px)';
+
+/**
+  Typography
+  ===================================================================
+*/
+
+$extralight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$manrope: 'Manrope', sans-serif;
+
+$default-font: $manrope;
+
+/**
+  Colors
+  ===================================================================
+*/
+
+$black: #000;
+$white: #fff;
+$red-1: #eb2227;
+$grey-1: #555554;
+$grey-2: #eaebee;
+$grey-3: #231f20;
+$grey-4: #9f9f9f;
+$grey-5: #e9ebee;
+$grey-6: #cdccce;
+$grey-7: #898989;
+$grey-8: #545454;
+
+
+$link-color: $red-1;
+
+/**
+  Animations
+  ===================================================================
+*/
+
+$quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+/* easeInOutQuad */
+
+$quad-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+/* easeOutQuad */
+
+$cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+/* easeInOutCubic */
+
+$cubic-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+/* easeOutCubic */
+
+$sine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+/* easeInOutSine */
+
+$sine-out: cubic-bezier(0.39, 0.575, 0.565, 1);
+
+/* easeOutSine */
+
+
+/**
+  Export
+  ===================================================================
+*/
+
+:export {
+    s: unquote($s);
+    default-font: $default-font;
+    black: $black;
+    white: $white;
+    red-1: $red-1;
+    grey-1: $grey-1;
+    grey-2: $grey-2;
+    quad: $quad;
+    quad-out: $quad-out;
+    cubic: $cubic;
+    cubic-out: $cubic-out;
+    sine: $sine;
+    sine-out: $sine-out;
+}

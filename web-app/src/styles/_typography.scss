@@ -1,0 +1,29 @@
+@import 'variables';
+
+/**
+  Typography
+  ===================================================================
+*/
+
+html {
+    font-family: $default-font;
+    font-size: 14px;
+    color: $grey-1;
+    @media #{$xs} {
+        font-size: 15px;
+    }
+    @media #{$s} {
+        font-size: 15px;
+    }
+    @media #{$m} {
+        font-size: 16px;
+    }
+}
+
+a { 
+    color: $red-1;
+    transition: color .8s $cubic;
+    &:hover {
+        color: $grey-1;
+    }
+}

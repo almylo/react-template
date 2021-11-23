@@ -1,0 +1,13 @@
+@import "../../../styles/variables";
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transition: opacity .8s $cubic;
+
+  &.viewChange {
+    opacity: 0;
+  } 
+}

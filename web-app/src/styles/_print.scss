@@ -1,0 +1,42 @@
+    @use 'variables' as *;
+    /**
+  Print
+  ===================================================================
+*/
+    
+    @media print {
+        body {
+            background-color: $white !important;
+            color: $black !important;
+        }
+        #layout-grid {
+            min-height: 0;
+        }
+        #header {
+            position: relative;
+            transform: translateY(0);
+            background-color: transparent !important;
+            .Header-inner {
+                transform: none;
+            }
+            .Header-navButton,
+            .Header-nav,
+            .Header-extras {
+                display: none;
+            }
+            .Header-brand {
+                color: $black;
+                transform: translate(-50%, 0) scale(2.5);
+                svg g {
+                    opacity: 1 !important;
+                }
+            }
+        }
+        #main {
+            padding-top: 0 !important;
+            min-height: 0 !important;
+            >div {
+                display: none;
+            }
+        }
+    }
