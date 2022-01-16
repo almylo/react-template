@@ -1,0 +1,19 @@
+@import "../../../styles/variables";
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  a {
+    color: $grey;
+    font-size: 1rem;
+    font-weight: $bold;
+    transition: color .4s $cubic-out;
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+    &:hover {
+      color: $black;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 {
   "isProduction": false,
-  "API_URL": "https://cms.hyperlinc.gr",
-  "API_NAME": "isminigrigoriadou/api",
-  "API_KEY": "b166b86011003a8cb59848c7341f57",
-  "get_collections": "collections/get",
-  "get_singletons": "singletons/get",
-  "contactFormApiKey": "8d0da9366c2250f7f9576e1493067d"
+  "apiUrl": "",
+  "assetUrl": "",
+  "authUrl" : "",
+  "clientId": "",
+  "clientSecret": "",
+  "basename": "/"
 }

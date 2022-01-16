@@ -6,167 +6,24 @@ header {
   width: 100%;
   transform: translateY(0);
   transition: all 1s $cubic;
-  height: 5rem;
+  height: 7rem;
   align-items: center;
   display: flex;
-  &.is-collapsed {
-    min-height: 6.875rem;
-    transform: translateY(-1rem);
-    background-color: rgba(255,255,255,.95);
-    .brand {
-      max-width: 16rem;
-    }
-    nav {
-      font-size: 0.9rem;
-      padding-top: 1rem;
-    }
-  }
-  .container {
+  justify-content: center;
+  .inner {
     display: flex;
     justify-content: space-between;
   }
   .brand {
-    max-width: 21.5rem;
+    max-width: 8rem;
+    max-height: 4rem;
     width: 100%;
-    transition: max-width 0.5s $cubic;
-    z-index: 2;
-    h1 {
-        text-indent: -100vw;
-    }
+    height: 100%;
     svg {
+      fill: currentColor;
+      color: $grey;
       width: 100%;
       max-height: 4rem;
-      color: $red-1;
-      transition: all 0.8s $cubic;
-    }
-  }
-  nav {
-    display: flex;
-    align-items: center;
-    color: $red-1;
-    font-size: 1rem;
-    font-weight: $extrabold;
-    padding-top: 1.4rem;
-    @media #{$max-m} {
-      display: none;
-    }
-    a {
-      transition: all 0.5s $cubic;
-        font-family: $manrope;
-      &:not(:last-child) {
-        margin-right: 2.25rem;
-      }
-      &:hover {
-        color: $grey-1;
-      }
-    }
-  }
-
-  .mobile-nav {
-    display: none;
-    z-index: 3;
-    position: relative;
-    transition: all .8s $cubic;
-    @media #{$max-m} {
-      align-items: center;
-      display: flex;
-    }
-    .nav-icon {
-      width: 30px;
-      height: 22px;
-      position: relative;
-      transform: rotate(0);
-      transition: .8s $cubic;
-      cursor: pointer;
-      z-index: 9999;
-      margin-top: 1.2rem;
-      &:hover {
-        span {
-          background-color: $grey-1;
-        }
-      }
-      span {
-        display: block;
-        position: absolute;
-        height: 3px;
-        width: 100%;
-        border-radius: 9px;
-        opacity: 1;
-        left: 0;
-        transform: rotate(0);
-        transition: all 0.5s ease-in-out;
-        background-color: $red-1;
-
-        &:nth-child(1) {
-          top: 0;
-        }
-        &:nth-child(2),
-        &:nth-child(3) {
-          top: 8px;
-        }
-        &:nth-child(4) {
-          top: 16px;
-        }
-      }
-    }
-  }
-  .mobile-menu {
-    position: fixed;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.9);
-    height: 100vh;
-    width: 100vw;
-    transition: all 0.8s $cubic;
-    transform: translate(100%);
-    display: flex;
-    visibility: hidden;
-    top: 0;
-    left: 0;
-  }
-  &.mobileIsOpened {
-    svg {
-      color: $grey-1;
-    }
-    
-    .nav-icon {
-      span {
-        height: 2px;
-        background-color: $grey-1;
-        &:nth-child(1) {
-          top: 8px;
-          width: 0%;
-          left: 50%;
-        }
-        &:nth-child(2) {
-          transform: rotate(45deg);
-        }
-        &:nth-child(3) {
-          transform: rotate(-45deg);
-        }
-        &:nth-child(4) {
-          top: 8px;
-          width: 0%;
-          left: 50%;
-        }
-      }
-    }
-    .mobile-menu {
-      display: flex;
-      visibility: visible;
-      height: 100vh;
-      width: 100vw;
-      transform: translateX(0);
-      nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        width: 100%;
-        text-align: left;
-        a {
-          margin-right: 0;
-        }
-      }
     }
   }
 }

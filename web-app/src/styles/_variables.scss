@@ -1,12 +1,6 @@
 $layout-width: 1600px;
-$container-width-header: 1684px;
-$container-width-1: 1557px;
-$container-width-2: 1430px;
-$container-width-3: 1284px;
-$container-width-4: 900px;
 $headerHeight: 8rem;
 $headerStickyHeight: 6.5rem;
-$headerMobileHeight: 6rem;
 
 /**
   Media
@@ -48,9 +42,9 @@ $medium: 500;
 $semibold: 600;
 $bold: 700;
 $extrabold: 800;
-$manrope: 'Manrope', sans-serif;
+$Roboto: 'Roboto', sans-serif;
 
-$default-font: $manrope;
+$default-font: $Roboto;
 
 /**
   Colors
@@ -59,18 +53,10 @@ $default-font: $manrope;
 
 $black: #000;
 $white: #fff;
-$red-1: #eb2227;
-$grey-1: #555554;
-$grey-2: #eaebee;
-$grey-3: #231f20;
-$grey-4: #9f9f9f;
-$grey-5: #e9ebee;
-$grey-6: #cdccce;
-$grey-7: #898989;
-$grey-8: #545454;
+$grey: #555554;
 
 
-$link-color: $red-1;
+$link-color: $grey;
 
 /**
   Animations
@@ -102,6 +88,7 @@ $sine-out: cubic-bezier(0.39, 0.575, 0.565, 1);
 /* easeOutSine */
 
 
+
 /**
   Export
   ===================================================================
@@ -112,9 +99,7 @@ $sine-out: cubic-bezier(0.39, 0.575, 0.565, 1);
     default-font: $default-font;
     black: $black;
     white: $white;
-    red-1: $red-1;
-    grey-1: $grey-1;
-    grey-2: $grey-2;
+    grey: $grey;
     quad: $quad;
     quad-out: $quad-out;
     cubic: $cubic;

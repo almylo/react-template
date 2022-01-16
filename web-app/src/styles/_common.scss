@@ -1,35 +1,19 @@
 @import "variables";
 
-@use "mixins" as *;
-
+body {
+    overscroll-behavior: none;
+}
 #root {
     min-height: 100vh;
-    overflow-y: hidden;
+    height: 100%;
 }
-.container {
+
+.inner {
     max-width: $layout-width;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    @media #{$max-xl} {
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
 }
 .svg-defs {
     display: none;
-}
-.fade-enter {
-    opacity: 0;
-    z-index: 1;
-  }
-body {
-    opacity: 1;
-    transition: opacity .5s ease-in-out;
-}
-  .page-exit{ 
-      opacity: 0;
-  }
-  .page-enter{ 
-    opacity: 1;
 }

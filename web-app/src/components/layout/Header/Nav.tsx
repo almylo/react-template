@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
+import './Nav.scss';
 
-interface NavData {
-}
-
-export default function Nav(props: NavData) {
+export default function Nav() {
   
 
   return (

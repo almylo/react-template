@@ -1,10 +1,10 @@
 import './Main.scss';
 
-interface MainLayoutProps {
+interface IMainProps {
   children: any;
 }
 
-export const Main = (props: MainLayoutProps) => {
+export const Main = (props: IMainProps) => {
   const {children} = props
   
 

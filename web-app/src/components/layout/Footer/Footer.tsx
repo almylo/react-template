@@ -5,8 +5,8 @@ export function Footer() {
   
   return (
     <footer>
-        <div className="container">
-          FOOTER
+        <div className="inner">
+          Footer
         </div>
     </footer>
   );

@@ -12,7 +12,7 @@ export function Container(props: IContainerProps) {
   const { children } = props;
 
   return (
-    <div className={`layout page-enter`}>
+    <div className={`layout`}>
       <Header />
       <Main>{children}</Main>
       <Footer />

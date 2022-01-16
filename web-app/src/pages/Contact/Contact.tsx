@@ -1,10 +1,9 @@
-import React from 'react'
+import './Contact.scss';
 
 export function Contact() {
-    return (
-        <div>
-            <h1>Contact Page</h1>
-            <div>Contact Form Here</div>
-        </div>
-    )
+  return (
+    <div className="pageContact">
+      <div className="inner">Contact</div>
+    </div>
+  );
 }
